@@ -1,6 +1,6 @@
 class Mouse{
     constructor(){
-
+        this.startMessage = "Click to start the game!"
     }
 
     getX(){
@@ -10,5 +10,4 @@ class Mouse{
     getY(){
         return mouseY-height/2;
     }
-
 }

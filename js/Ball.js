@@ -25,8 +25,9 @@ class Ball{
                 if(this.vz < 1){
                     
                     if(!player.contains(this.x, this.y)){
-                        //PLAYRT MISSED
+                        //PLAYER MISSED
                         console.log('Player missed');
+                        bot.points += 1;
                         gamefield.gameOver = true;
                         gamefield.reset();
 
@@ -49,7 +50,8 @@ class Ball{
                     
                     if(!bot.contains(this.x, this.y)){
                         //BOT MISSED
-                        console.log('Bot missed')
+                        console.log('Bot missed');
+                        player.points += 1;
                         gamefield.gameOver = true;
                         gamefield.reset();
                                                 
